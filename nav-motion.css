@@ -1,0 +1,12 @@
+nav a .nav-magnet,nav a .nav-elastic{display:inline-block;font:inherit;color:inherit;letter-spacing:inherit;line-height:inherit}
+nav a .nav-magnet{transition:transform 180ms cubic-bezier(.2,.8,.2,1)}
+nav a .nav-elastic{position:relative}
+nav a .nav-elastic:after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;background:#d6d6d6;transform:scaleX(0);transform-origin:left;transition:transform 280ms ease;pointer-events:none}
+@media(hover:hover) and (pointer:fine){nav a.nav-pointer .nav-elastic:after{transform:scaleX(1)}}
+nav a:focus-visible .nav-elastic:after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){nav a .nav-magnet,nav a .nav-elastic:after{transition:none}nav a .nav-magnet{transform:none!important}}
+/* Keep interaction feedback neutral across the existing site. */
+:root{--accent-red:#fff}
+a:active,button:active,a[aria-current="page"],nav a.active{color:#fff}
+::selection{color:#000;background:#fff}
+nav a:focus-visible{outline:1px solid #d6d6d6;outline-offset:8px}
