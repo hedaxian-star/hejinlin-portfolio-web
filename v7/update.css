@@ -1,0 +1,162 @@
+/* Isolated 1114 revision; original v5 assets and pages remain unchanged. */
+body:has(.hero) .hero .chrome-title{isolation:auto;mix-blend-mode:normal;background:transparent}
+body:has(.hero) .hero .chrome-title>canvas{mix-blend-mode:normal}
+.selected-heading{text-align:center;font-size:20px;font-weight:500;margin:0 0 90px;padding-top:20px}
+#work .project-deck{animation:deck-float 8s ease-in-out infinite;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+@keyframes deck-float{0%,100%{translate:0 0}50%{translate:0 -5px}}
+#work .stage{touch-action:pan-y;aspect-ratio:1440/450;overflow:hidden}
+#work .project-intro{display:grid;grid-template-columns:23% minmax(0,1fr);gap:3%;width:92%;padding:0;margin:35px auto 120px}
+#work .project-intro[hidden],#work .project-deck[hidden],.mercury-pages[hidden]{display:none}
+#work .project-context p{margin:0;font-size:clamp(14px,1.65vw,24px);line-height:1.3;font-weight:400;color:#ddd}
+#work .project-context .project-types{margin-top:65px;font-size:clamp(14px,1.4vw,20px)}
+#work .project-details h2{font-size:clamp(26px,2.8vw,40px);font-weight:600;line-height:1.25;margin:0 0 8px;color:#fff}
+#work .project-details .project-year{display:block;color:#999;font-size:clamp(16px,1.5vw,22px);margin:0 0 8px}
+#work .project-description{font-size:clamp(16px,1.4vw,20px);line-height:1.4;color:#999;margin:0}
+#work .project-link{margin-top:55px;font-size:clamp(18px,1.65vw,24px)}
+#work .project-link:before,#work .project-link .read-more-arrow{width:24px;height:24px;flex-basis:24px}
+.mercury-pages{margin:8px auto 0}.category-list{width:92%;margin:0 auto 140px}.category-list button{display:grid;grid-template-columns:40px 270px 1fr 30px;gap:16px;width:100%;padding:14px 0;border:0;border-top:1px solid #383838;background:transparent;text-align:left;color:#888;font-size:20px;font-weight:400;line-height:1.35;cursor:pointer}.category-list button:last-child{border-bottom:1px solid #383838}.category-list button:hover{color:#bbb}.category-list button[aria-pressed=true]{color:#eee}.category-list button span:last-child{text-align:right;font-size:25px}.category-empty{position:absolute;inset:40% 0;text-align:center;color:#aaa}
+body:has(main.archive)>nav,body:has(main.case)>nav{position:sticky!important;top:0;z-index:100;background:#000;padding-top:max(28px,env(safe-area-inset-top));width:100%;box-sizing:border-box}
+.work-introduction{margin:0 0 100px}.work-introduction p{font-size:clamp(20px,2.8vw,40px);line-height:1.5;font-weight:400;margin:0}.work-introduction p[lang=en]{font-size:clamp(18px,2.65vw,38px)}
+#contact .connect-art{padding-bottom:410px;box-sizing:content-box}#contact .connect-art .reveal-piece{transform:translateX(var(--from));transition:opacity 1s,transform 1.4s cubic-bezier(.22,1,.36,1);transition-delay:var(--delay)}#contact .connect-art.is-visible .reveal-piece{transform:none}#contact .contact-hit{width:100%;height:calc(100% - 410px);z-index:2}#contact .qr-popover{left:50%;top:auto;bottom:20px;margin:0;width:260px!important;height:auto;padding:0;overflow:visible;transform:translate(-50%,10px);visibility:hidden;opacity:0;pointer-events:none;border-radius:16px}#contact .qr-popover img{position:static;width:100%!important;max-width:100%;height:auto;object-fit:contain}#contact .connect-art:hover .qr-popover,#contact .connect-art:focus-within .qr-popover{opacity:0;visibility:hidden;transform:translate(-50%,10px)}#contact .connect-art.show-qr .qr-popover{opacity:1;visibility:visible;transform:translate(-50%,0);pointer-events:auto}#contact .back-top{margin-top:50px}
+@media(max-width:700px){.selected-heading{margin-bottom:40px;font-size:16px}#work .stage{aspect-ratio:1.7}#work .project-intro{grid-template-columns:1fr;margin-bottom:65px;gap:25px}#work .project-context .project-types{margin-top:12px}#work .project-link{margin-top:28px}.category-list{margin-bottom:70px}.category-list button{grid-template-columns:24px minmax(0,1fr) 22px;gap:6px 12px;font-size:16px}.category-list button span:nth-child(3){grid-column:2;grid-row:2;font-size:13px}.category-list button span:last-child{grid-column:3;grid-row:1/3}.work-introduction{margin-bottom:55px}#contact .connect-art{width:90%;padding-bottom:370px}#contact .contact-hit{height:calc(100% - 370px)}#contact .qr-popover{width:240px!important}body:has(main.case)>nav,body:has(main.archive)>nav{padding-top:max(20px,env(safe-area-inset-top))}}
+@media(prefers-reduced-motion:reduce){#work .project-deck{animation:none}#contact .connect-art .reveal-piece{transform:none;transition:none}}
+/* PDF 1114 measured desktop coordinates, 1440px reference. */
+:root{--u:min(.069444444vw,1px)}
+body>main:has(.hero){max-width:1440px;margin:auto}
+body>nav{height:calc(76 * var(--u));padding:calc(28 * var(--u)) calc(56 * var(--u));font-size:calc(20 * var(--u));box-sizing:border-box}body>nav a{font-size:calc(20 * var(--u));line-height:1;letter-spacing:1px}
+body .hero{height:calc(684 * var(--u));max-width:none;margin:0;overflow:visible}
+body .hero .chrome-title{left:8.4722%;top:calc(18 * var(--u));width:82.9167%;height:calc(666 * var(--u))}
+body .hero h1{display:none}
+#work .selected-heading{height:calc(39 * var(--u));padding:calc(19 * var(--u)) 0 0;margin:0 0 calc(90 * var(--u));font-size:calc(20 * var(--u));line-height:1}
+#work .stage{height:calc(440 * var(--u));aspect-ratio:auto}
+#work .project-slide{width:44.4444%;aspect-ratio:1.6;border-radius:calc(20 * var(--u))}
+#work .project-slide canvas{border-radius:inherit}
+#work .project-slide:not(.active){filter:brightness(.75)}
+#work .mercury-pages{display:none}
+#work .project-intro{grid-template-columns:calc(302 * var(--u)) minmax(0,1fr);gap:calc(43 * var(--u));width:auto;margin:calc(40 * var(--u)) calc(56 * var(--u)) calc(123 * var(--u));min-height:calc(240 * var(--u));padding:0}
+#work .project-context p{font-size:calc(25 * var(--u));line-height:1.04}
+#work .project-context .project-types{font-size:calc(22 * var(--u));line-height:calc(26 * var(--u));margin-top:calc(68 * var(--u))}
+#work .project-details h2{font-size:calc(45 * var(--u));line-height:1;margin:0 0 calc(17 * var(--u))}
+#work .project-details .project-year{font-size:calc(22 * var(--u));line-height:1;margin:0 0 calc(11 * var(--u))}
+#work .project-description{font-size:calc(22 * var(--u));line-height:calc(26 * var(--u))}
+#work .project-link{margin:calc(52 * var(--u)) 0 0;padding:0;min-height:0;line-height:1;font-size:calc(25 * var(--u));gap:calc(10 * var(--u))}
+#work .project-link span{font-size:inherit}#work .project-link:before,#work .project-link .read-more-arrow{width:calc(25 * var(--u));height:calc(25 * var(--u));flex-basis:calc(25 * var(--u))}
+.category-list{width:auto;margin:0 calc(58 * var(--u)) calc(140 * var(--u))}
+.category-list button{border-radius:0;grid-template-columns:calc(40 * var(--u)) calc(271 * var(--u)) 1fr calc(30 * var(--u));gap:calc(15 * var(--u));height:calc(50 * var(--u));padding:calc(13 * var(--u)) 0;font-size:calc(22 * var(--u));line-height:1}
+.category-list button span:last-child{font-size:calc(28 * var(--u))}
+body .floating-panel{margin:0 calc(30 * var(--u))!important;min-height:0;padding:calc(28 * var(--u)) calc(27 * var(--u)) 0!important;border-radius:calc(30 * var(--u)) calc(30 * var(--u)) 0 0;height:auto}
+#about.floating-panel{padding-top:calc(28 * var(--u))!important;padding-bottom:calc(76 * var(--u))!important}
+#about .about-title{font-size:calc(200 * var(--u))!important;line-height:1;letter-spacing:-.055em;height:calc(200 * var(--u));margin:0 0 calc(37 * var(--u))!important}
+#about .about-arrow{width:1em;height:1em;flex-basis:1em}
+#about .about-layout{grid-template-columns:calc(302 * var(--u)) calc(441 * var(--u)) minmax(0,1fr);gap:calc(43 * var(--u));align-items:start}
+#about .portrait{width:100%;max-width:none;height:calc(400 * var(--u));border-radius:calc(10 * var(--u))}
+#about .biography h2{font-size:calc(45 * var(--u));line-height:calc(53 * var(--u));font-weight:600;margin:0 0 calc(65 * var(--u))}
+#about .biography h3{font-size:calc(30 * var(--u));line-height:1;white-space:nowrap;font-weight:600;margin:0 0 calc(24 * var(--u))}
+#about .biography p{font-size:calc(22 * var(--u));line-height:calc(26 * var(--u));margin:0 0 calc(26 * var(--u));color:#888}
+#about .career{padding-left:calc(29 * var(--u))}#about .career h3{font-size:calc(30 * var(--u));line-height:1;font-weight:600;margin:0;padding-bottom:calc(18 * var(--u));border-bottom:1px solid #333}#about .career dl{margin:0;color:#888;font-size:calc(22 * var(--u))}#about .career dl>div{display:flex;justify-content:space-between;gap:8px;line-height:calc(52 * var(--u))}#about .career dd{margin:0;white-space:nowrap}#about .career .education{margin-top:calc(66 * var(--u))}
+#brands.floating-panel{padding-top:calc(34 * var(--u))!important;height:calc(655 * var(--u));padding-bottom:0!important}
+#brands .panel-title{font-size:calc(50 * var(--u))!important;line-height:1;margin:0!important;font-weight:600!important}
+#brands .brand-strip{width:93.5%;margin:calc(117 * var(--u)) auto 0}
+#contact.floating-panel{padding-top:calc(50 * var(--u))!important;min-height:calc(674 * var(--u));padding-bottom:calc(70 * var(--u))!important}
+#contact .panel-title{font-size:calc(55 * var(--u))!important;line-height:1;margin:0!important}
+#contact .connect-art{width:calc(830 * var(--u));margin:calc(108 * var(--u)) auto 0;padding-bottom:0}
+#contact .contact-hit{height:100%}#contact .qr-popover{top:calc(100% + 16px);bottom:auto;z-index:20}
+#contact .connect-art.show-qr{padding-bottom:370px}#contact .connect-art.show-qr .contact-hit{height:calc(100% - 370px)}#contact .connect-art.show-qr .qr-popover{top:auto;bottom:10px}
+#contact .back-top{margin-top:calc(240 * var(--u));font-size:calc(20 * var(--u));line-height:1}
+.work-introduction p,.work-introduction p[lang=en]{font-size:clamp(22px,3.125vw,45px);line-height:calc(65 * var(--u))}
+@media(max-width:800px){:root{--u:1px}body>nav{height:auto;padding:22px 5%}body>nav a{font-size:13px}body .hero{height:65vw}body .hero .chrome-title{height:60vw;top:0;width:92%;left:4%}#work .selected-heading{font-size:16px;height:auto;padding-top:12px;margin-bottom:35px}#work .stage{height:63vw}#work .project-slide{width:70%}#work .project-intro{grid-template-columns:1fr;margin:24px 5% 60px;min-height:0;gap:24px}#work .project-context p{font-size:17px}#work .project-context .project-types{font-size:15px;line-height:1.4;margin-top:12px}#work .project-details h2{font-size:28px;line-height:1.3;margin-bottom:12px}#work .project-details .project-year,#work .project-description{font-size:16px;line-height:1.5}#work .project-link{font-size:18px;margin-top:28px}.category-list{margin:0 5% 75px}.category-list button{grid-template-columns:24px 1fr 24px;font-size:16px;height:auto;padding:14px 0;gap:6px 12px}body .floating-panel{margin:0 3%!important;padding:24px 4% 45px!important}#about .about-title{font-size:12vw!important;height:auto;margin-bottom:30px!important}#about .about-layout{grid-template-columns:1fr;gap:28px}#about .portrait{width:55%;height:auto}#about .biography h2{font-size:30px;line-height:1.25;margin-bottom:25px}#about .biography h3{font-size:19px;white-space:normal;line-height:1.4}#about .biography p{font-size:16px;line-height:1.6}#about .career{padding:0}#about .career h3{font-size:24px}#about .career dl{font-size:16px}#about .career .education{margin-top:30px}#brands.floating-panel{height:400px}#brands .panel-title{font-size:30px!important}#brands .brand-strip{margin-top:70px;width:100%}#contact.floating-panel{min-height:450px}#contact .panel-title{font-size:30px!important}#contact .connect-art{width:100%;margin-top:65px}#contact .back-top{margin-top:150px;font-size:15px}.work-introduction p,.work-introduction p[lang=en]{font-size:22px;line-height:1.6}}
+/* Independent, restrained card suspension; carousel transform stays on parent. */
+#work .project-deck{animation:none}
+#work .project-slide canvas{animation:card-suspend 7.8s ease-in-out infinite;animation-delay:-2.1s;box-shadow:0 12px 40px #0002}
+#work .project-slide:nth-child(2n) canvas{animation-duration:9.1s;animation-delay:-4.3s}
+#work .project-slide:nth-child(3n) canvas{animation-duration:8.5s;animation-delay:-1.4s}
+@keyframes card-suspend{0%,100%{transform:translateY(2px) rotate(-.15deg)}50%{transform:translateY(-4px) rotate(.15deg)}}
+@media(prefers-reduced-motion:reduce){#work .project-slide canvas{animation:none}}
+/* Remove inherited editorial slash and reversed link layout. */
+#work .project-details .project-year:before{content:none;display:none}
+#work .project-details .project-year{margin-left:0;padding-left:0}
+#work .project-details .project-link{display:inline-flex;flex-direction:row;justify-content:flex-start;align-items:center;width:max-content;max-width:100%;gap:10px}
+#work .project-details .project-link:before{content:none;display:none}
+#work .project-details .project-link .read-more-arrow{visibility:visible;position:static;display:block;flex-shrink:0;object-fit:contain}
+#work .project-link span,#contact .back-top{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+#about .career-enter{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform 1.1s cubic-bezier(.22,1,.36,1)}
+#about .career-enter.career-visible{opacity:1;transform:none}
+#contact .connect-art{isolation:auto}
+#contact .connect-art .reveal-piece{mix-blend-mode:screen}
+@media(prefers-reduced-motion:reduce){#about .career-enter{opacity:1;transform:none;transition:none}}
+#contact .transparent-parts .connect-composition{position:relative;display:block;width:100%;aspect-ratio:713/124;margin:0}
+#contact .transparent-parts .connect-composition .reveal-piece{position:absolute;inset:auto;max-width:none;margin:0;object-fit:contain;mix-blend-mode:normal;clip-path:none;pointer-events:none}
+#work .project-link span,#contact .back-top{text-decoration:none}
+#work .project-link:is(:hover,:focus-visible,:active) span,#contact .back-top:is(:hover,:focus-visible,:active){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+body nav .pdf-download{display:inline-flex;align-items:center;gap:7px}
+body nav .pdf-download svg{flex-shrink:0}
+body nav .pdf-download[aria-disabled=true]{cursor:default}
+/* Equal navigation line boxes, including the magnetic wrappers and PDF icon. */
+body>nav{align-items:center}
+body>nav>a{display:flex;align-items:center;line-height:1;height:1em;padding:0}
+body>nav>a .nav-magnet,body>nav>a .nav-elastic{display:inline-flex;align-items:center;line-height:1;height:1em}
+body>nav>a.pdf-download .nav-elastic{gap:.35em}
+body>nav>a.pdf-download svg{display:block;width:1em;height:1em;flex:0 0 1em;vertical-align:middle}
+#work .works-guide{display:inline-flex;align-items:center;gap:.4em;color:inherit;font:inherit}
+#work .works-guide>span{display:inline-block;animation:works-guide-down 2.8s ease-in-out infinite;animation-play-state:paused}
+#work .guide-visible .works-guide>span{animation-play-state:running}
+#selected-cards{scroll-margin-top:24px}
+@keyframes works-guide-down{0%,15%,85%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(6px);opacity:.55}}
+@media(prefers-reduced-motion:reduce){#work .works-guide>span{animation:none}}
+/* Work cover interaction, independent of the entry animation. */
+.archive .cover-window{overflow:hidden;isolation:isolate}
+.archive .cover-window:after{content:'';position:absolute;inset:35% 0 0;z-index:1;background:linear-gradient(to top,rgba(0,0,0,.48),rgba(0,0,0,.16) 50%,transparent);opacity:0;transform:translateY(22%);transition:opacity .35s ease,transform .5s cubic-bezier(.22,1,.36,1);pointer-events:none}
+@media(hover:hover){.archive .work-card:hover .cover-window:after{opacity:1;transform:translateY(0)}}
+.archive .work-card:focus-visible .cover-window:after,.archive .work-card:active .cover-window:after{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.archive .cover-window:after{transition:none;transform:none}}
+.work-filters{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 42px}
+.work-filters button{border:1px solid #555;border-radius:999px;padding:10px 22px;font-size:16px;line-height:1.3;color:#999;background:transparent;transition:color .2s,border-color .2s,background .2s}
+.work-filters button:hover{border-color:#aaa;color:#fff}
+.work-filters button[aria-pressed=true]{border-color:#fff;color:#000;background:#fff}
+.archive .work-card[hidden],.work-empty[hidden]{display:none!important}
+.work-empty{padding:60px 0 100px;color:#999;font-size:20px}
+.archive .work-introduction{margin-bottom:48px}
+@media(max-width:650px){.work-filters{gap:8px;margin-bottom:28px}.work-filters button{font-size:13px;padding:9px 15px}}
+#contact .expression-icon{margin:0;display:block;overflow:hidden}
+#contact .expression-icon .expression-frame{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;margin:0;pointer-events:none}
+#contact .expression-0{opacity:0;animation:eye-left 8s steps(1,end) infinite}
+#contact .expression-1{opacity:0;animation:eye-right 8s steps(1,end) infinite}
+#contact .expression-2{opacity:1;animation:eye-center 8s steps(1,end) infinite}
+#contact .expression-icon .expression-frame{animation-play-state:paused}
+#contact .is-visible .expression-icon .expression-frame{animation-play-state:running}
+@keyframes eye-center{0%,100%{opacity:1}28%{opacity:0}45%{opacity:1}68%{opacity:0}84%{opacity:1}}
+@keyframes eye-left{0%,45%,100%{opacity:0}28%{opacity:1}}
+@keyframes eye-right{0%,84%,100%{opacity:0}68%{opacity:1}}
+@media(prefers-reduced-motion:reduce){#contact .expression-icon .expression-frame{animation:none}#contact .expression-0,#contact .expression-1{display:none}#contact .expression-2{opacity:1}}
+/* 1.5s left/right glance and a short blink confined to the inner eye area. */
+#contact .expression-0{animation:glance-left 1.5s steps(1,end) infinite;opacity:1}
+#contact .expression-1{animation:glance-right 1.5s steps(1,end) infinite;opacity:0}
+#contact .expression-icon .expression-blink{position:absolute;left:22%;top:25%;width:56%;height:44%;background:#000;border-radius:35%;transform:scaleY(0);transform-origin:center;animation:expression-blink 1.5s ease-in-out infinite;pointer-events:none;z-index:2;animation-play-state:paused}
+#contact .is-visible .expression-icon .expression-blink{animation-play-state:running}
+@keyframes glance-left{0%,100%{opacity:1}42%{opacity:0}90%{opacity:1}}
+@keyframes glance-right{0%,90%,100%{opacity:0}42%{opacity:1}}
+@keyframes expression-blink{0%,76%,92%,100%{transform:scaleY(0)}83%,86%{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){#contact .expression-icon .expression-frame{animation:none}#contact .expression-icon .expression-0{display:block;opacity:1}#contact .expression-icon .expression-1,#contact .expression-blink{display:none}}
+#contact .expression-icon .expression-frame{animation-play-state:paused}
+#contact .is-visible .expression-icon .expression-frame{animation-play-state:running}
+/* 425 × 300 reference tile: 16:10 cover + 34px caption. */
+.archive .masonry{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:26.5px;row-gap:38px;columns:auto}
+.archive .work-card{margin:0;min-width:0;display:block}
+.archive .work-card .cover-window{width:100%;aspect-ratio:1.6!important;border-radius:15px;overflow:hidden}
+.archive .work-card>div:not(.cover-window){height:34.375px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px;padding:0}
+.archive .work-card h2{margin:0;font-size:18px;font-weight:700;line-height:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.archive .work-card>div:not(.cover-window)>span{display:none}
+@media(max-width:1000px){.archive .masonry{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}.archive .work-card h2{font-size:16px}}
+@media(max-width:600px){.archive .masonry{grid-template-columns:1fr;gap:30px}.archive .work-card h2{font-size:16px}}
+
+/* Transparent exported corners must not reveal the old project tint. */
+.archive .work-card .cover-window{background:transparent;border:0;box-shadow:none}
+.archive .work-card .cover-window img{border:0;box-shadow:none;transform:scale(1.006);transform-origin:center;object-position:center}
+
+/* Space below the final WORK row. */
+main.archive{padding-bottom:clamp(100px,12vw,180px)}
+
+/* Trim export hairlines without altering the shared case-column alignment. */
+main.case .case-image-edge{display:block;overflow:hidden;line-height:0;margin:0;padding:0;border:0}
+main.case .case-image-edge img{display:block;width:calc(100% + 4px);max-width:none;height:auto;margin:-2px;border:0;padding:0;border-radius:0}
+.archive .work-card h2{font-weight:600}
