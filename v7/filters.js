@@ -1,6 +1,28 @@
 (()=>{
 const grid=document.querySelector('.archive .masonry');if(!grid)return;
-const groups=[['all','全部',null],['ip','IP design & Campaign',['ip','seasonal','chicken','ip-merch']],['marketing','Brand Marketing',['detour','festival','awards']],['packaging','Brand & Packaging',['max','organic','daily','moon','tree-ripe']],['spatial','Spatial & Retail',['ip','street','chicken','awards','daily']],['ai','AI Lab',[]]];
+
+const groups=[
+  ['all','全部',null],
+
+  ['ip','IP design & Campaign',
+    ['ip','seasonal','chicken','ip-merch']
+  ],
+
+  ['marketing','Brand Marketing',
+    ['detour','festival','awards','ip','seasonal','chicken','street']
+  ],
+
+  ['packaging','Brand & Packaging',
+    ['max','organic','daily','moon','tree-ripe']
+  ],
+
+  ['spatial','Spatial & Retail',
+    ['ip','street','chicken','awards','daily']
+  ],
+
+  ['ai','AI Lab',[]]
+];
+
 const bar=document.createElement('div');bar.className='work-filters';bar.setAttribute('role','group');bar.setAttribute('aria-label','作品分类');grid.before(bar);
 const empty=document.createElement('p');empty.className='work-empty';empty.textContent='AI Lab · 项目待更新';empty.setAttribute('role','status');grid.after(empty);
 const cards=[...grid.querySelectorAll('.work-card')];
